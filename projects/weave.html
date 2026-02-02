@@ -13,82 +13,82 @@
 </head>
 <body>
 
-<back-navbar></back-navbar>
+  <back-navbar></back-navbar>
 
-<custom-title text="WEAVE" prefix="Project:" suffix="Co-op game" github="https://github.com/weave-game/weave"></custom-title>
+  <custom-title text="WEAVE" prefix="Project:" suffix="Co-op game" github="https://github.com/weave-game/weave"></custom-title>
 
-<div class="mx-8 mb-32">
-  <video class="w-full max-w-3xl mx-auto rounded-2xl" autoplay loop muted playsinline poster="/images/projects/weave/menu.png">
-    <source src="/videos/weave/menu.mov" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
+  <div class="mx-8 mb-32">
+    <video class="w-full max-w-3xl mx-auto rounded-2xl" autoplay loop muted playsinline poster="/images/projects/weave/menu.png">
+      <source src="/videos/weave/menu.mov" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
-<project-details
-  idea='[
-    "University group project for the Game Development Project course",
-    "The theme was teamwork",
-    "We came up with a combination of Tron and Snake with a co-op twist"
-  ]'
-  info='[
-    "Developed with <text-glow>Godot .NET</text-glow> in <text-glow>C#</text-glow>",
-    "Player number is virtually unlimited",
-    "Features a balanced scoring system that is independent of the number of player",
-    "Animations and custom music",
-    "Presented at an exhibition in Gothenburg"
-  ]'
-  time='[
-    "Sep - Nov, 2023",
-    "Status: <span class=\"font-title text-green-500\">Prototype finished</span>"
-  ]'>
-</project-details>
+  <project-details
+    idea='[
+      "University group project for the Game Development Project course",
+      "The theme was teamwork",
+      "We came up with a combination of Tron and Snake with a co-op twist"
+    ]'
+    info='[
+      "Developed with <text-glow>Godot .NET</text-glow> in <text-glow>C#</text-glow>",
+      "Player number is virtually unlimited",
+      "Features a balanced scoring system that is independent of the number of player",
+      "Animations and custom music",
+      "Presented at an exhibition in Gothenburg"
+    ]'
+    time='[
+      "Sep - Nov, 2023",
+      "Status: <span class=\"font-title text-green-500\">Prototype finished</span>"
+    ]'>
+  </project-details>
 
-<div class="mb-32">
-  <icon-button icon="github" text="View on GitHub" url="https://github.com/weave-game/weave"></icon-button>
-</div>
+  <div class="mb-32">
+    <icon-button icon="github" text="View on GitHub" url="https://github.com/weave-game/weave"></icon-button>
+  </div>
 
-<div class="mx-8">
-  <div class="flex flex-col gap-16 w-full max-w-3xl mx-auto">
-    <div class="">
-      <video class="w-full max-w-3xl mx-auto rounded-2xl" autoplay loop muted playsinline poster="/images/projects/weave/gameplay.png">
-        <source src="/videos/weave/gameplay.mov" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <div class="p-6">
-        <div class="text-xl text-textLight font-title">Gameplay</div>
-        <div class="text-md text-text font-light my-2 space-y-2">
-          <p>Players control a line that is constantly moving and gradually accelerating</p>
-          <p>Each player has to reach a pickup of their corresponding color</p>
-          <p>Doing so grants score, resets the game field and spawns new pickups and obstacles</p>
+  <div class="mx-8">
+    <div class="flex flex-col gap-16 w-full max-w-3xl mx-auto">
+      <div class="">
+        <video class="w-full max-w-3xl mx-auto rounded-2xl" autoplay loop muted playsinline poster="/images/projects/weave/gameplay.png">
+          <source src="/videos/weave/gameplay.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="p-6">
+          <div class="text-xl text-textLight font-title">Gameplay</div>
+          <div class="text-md text-text font-light my-2 space-y-2">
+            <p>Players control a line that is constantly moving and gradually accelerating</p>
+            <p>Each player has to reach a pickup of their corresponding color</p>
+            <p>Doing so grants score, resets the game field and spawns new pickups and obstacles</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="">
-      <video class="w-full max-w-3xl mx-auto rounded-2xl" autoplay loop muted playsinline poster="/images/projects/weave/end.png">
-        <source src="/videos/weave/end.mov" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <div class="p-6">
-        <div class="text-xl text-textLight font-title">Game over</div>
-        <div class="text-md text-text font-light my-2 space-y-2">
-          <p>Upon collision with an obstacle or a line, the game ends</p>
-          <p>During the exhibition, the achieved scores were saved to our locally hosted server and were shown on a secondary screen</p>
+      <div class="">
+        <video class="w-full max-w-3xl mx-auto rounded-2xl" autoplay loop muted playsinline poster="/images/projects/weave/end.png">
+          <source src="/videos/weave/end.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="p-6">
+          <div class="text-xl text-textLight font-title">Game over</div>
+          <div class="text-md text-text font-light my-2 space-y-2">
+            <p>Upon collision with an obstacle or a line, the game ends</p>
+            <p>During the exhibition, the achieved scores were saved to our locally hosted server and were shown on a secondary screen</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<custom-footer></custom-footer>
-<scroll-to-top></scroll-to-top>
+  <custom-footer></custom-footer>
+  <scroll-to-top></scroll-to-top>
 
-<script type="module" src="/src/components/projectDetails.js"></script>
-<script type="module" src="/src/components/iconButton.js"></script>
-<script type="module" src="/src/components/customTitle.js"></script>
-<script type="module" src="/src/components/customFooter.js"></script>
-<script type="module" src="/src/components/scrollToTop.js"></script>
-<script type="module" src="/src/components/textGlow.js"></script>
-<script type="module" src="/src/components/backNavbar.js"></script>
+  <script type="module" src="/src/components/projectDetails.js"></script>
+  <script type="module" src="/src/components/iconButton.js"></script>
+  <script type="module" src="/src/components/customTitle.js"></script>
+  <script type="module" src="/src/components/customFooter.js"></script>
+  <script type="module" src="/src/components/scrollToTop.js"></script>
+  <script type="module" src="/src/components/textGlow.js"></script>
+  <script type="module" src="/src/components/backNavbar.js"></script>
 </body>
 </html>

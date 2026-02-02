@@ -13,223 +13,223 @@
 </head>
 <body>
 
-<back-navbar></back-navbar>
+  <back-navbar></back-navbar>
 
-<custom-title text="CARDIUM" suffix="Extraction deckbuilder" prefix="Project:" itch="https://leventevarga.itch.io/cards" github="https://github.com/levente-varga/Cardium"></custom-title>
+  <custom-title text="CARDIUM" suffix="Extraction deckbuilder" prefix="Project:" itch="https://leventevarga.itch.io/cards" github="https://github.com/levente-varga/Cardium"></custom-title>
 
-<project-details
-  idea='[
-    "Master&#39;s Thesis project in Game Design and Technology at the University of Gothenburg",
-    "Experimenting with a new mix of game genres: <text-glow>extraction</text-glow> and <text-glow>deck-builder</text-glow>"
-  ]'
-  info='[
-    "Developed with <text-glow>Godot .NET</text-glow> in <text-glow>C#</text-glow>",
-    "Features generated dungeons",
-    "Various card and enemy types"
-  ]'
-  time='[
-    "Feb - May, 2025",
-    "Status: <span class=\"font-title text-green-500\">Demo released</span>"
-  ]'>
-</project-details>
+  <project-details
+    idea='[
+      "Master&#39;s Thesis project in Game Design and Technology at the University of Gothenburg",
+      "Experimenting with a new mix of game genres: <text-glow>extraction</text-glow> and <text-glow>deck-builder</text-glow>"
+    ]'
+    info='[
+      "Developed with <text-glow>Godot .NET</text-glow> in <text-glow>C#</text-glow>",
+      "Features generated dungeons",
+      "Various card and enemy types"
+    ]'
+    time='[
+      "Feb - May, 2025",
+      "Status: <span class=\"font-title text-green-500\">Demo released</span>"
+    ]'>
+  </project-details>
 
-<div class="mb-2">
-  <icon-button icon="itch" text="Download on itch.io" url="https://leventevarga.itch.io/cards"></icon-button>
-</div>
-
-<div class="mx-auto mb-8 text-sm max-w-xs flex flex-col items-center text-textDim font-light fill-textDim">
-  <div class="flex flex-row items-center justify-center gap-1">
-    Available for:
-    <svg class="size-4"><use href="/svg/icons.svg#windows"/></svg>
-    <svg class="size-4"><use href="/svg/icons.svg#apple"/></svg>
+  <div class="mb-2">
+    <icon-button icon="itch" text="Download on itch.io" url="https://leventevarga.itch.io/cards"></icon-button>
   </div>
-</div>
 
-
-<div class="mb-32 flex flex-row items-center justify-center gap-4">
-  <icon-button icon="github" text="View on GitHub" url="https://github.com/levente-varga/Cardium"></icon-button>
-  <icon-button icon="document-medium" text="View thesis" url="/files/cardium/thesis.pdf" blank="false"></icon-button>
-</div>
-
-<div class="sm:mx-8 mx-4">
-  <div class="flex flex-col gap-32 w-full max-w-xl mx-auto">
-
-    <div id="gameplay" class="max-w-3xl">
-      <div class="text-5xl text-textDim font-title"><span class="text-textLight">#1</span> Gameplay</div>
-    </div>
-
-    <div class="">
-      <img src="/images/projects/cardium.png" class="w-full max-w-3xl mx-auto rounded-2xl" alt="Gameplay overview">
-      <div class="p-6">
-        <div class="text-xl text-textLight font-title">Overview</div>
-        <div class="text-md text-text font-light my-2 space-y-2">
-          <p>The only resource in the game is <text-glow>cards</text-glow>: found inside chests and dropped from defeated enemies.</p>
-          <p>The game is turn based, with each action (moving, playing or discarding a card, etc.) counting as one turn.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="">
-      <div class="columns-2 w-full gap-8 max-w-3xl mx-auto">
-        <img src="/images/projects/cardium/moving.gif" class="w-full rounded-2xl" alt="Player movement animation">
-        <img src="/images/projects/cardium/nudging.gif" class="w-full rounded-2xl" alt="Player nudging animation">
-      </div>
-
-      <div class="p-6">
-        <div class="text-xl text-textLight font-title">Controls</div>
-        <div class="text-md text-text font-light my-2 space-y-2">
-          <p> The player moves using the <text-glow>arrow keys</text-glow>. Objects can be <text-glow>interacted</text-glow> by nudging them.</p>
-          <p> Holding down a key allows for continuous movement to speed up traversing long corridors.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="">
-      <div class="columns-2 w-full gap-8 max-w-3xl mx-auto">
-        <img src="/images/projects/cardium/playing.gif" class="w-full rounded-2xl" alt="Card play animation">
-        <img src="/images/projects/cardium/targeting.gif" class="w-full rounded-2xl" alt="Target selection animation">
-      </div>
-
-      <div class="p-6">
-        <div class="text-xl text-textLight font-title">Using cards</div>
-        <div class="text-md text-text font-light my-2 space-y-2">
-          <p> Cards are selected and played using <text-glow>drag-and-drop</text-glow>. Targets are picked using <text-glow>left-click</text-glow> for cards that need them. Targeting can be cancelled with <text-glow>right-click</text-glow>.</p>
-          <p> Cards can be <text-glow>discarded</text-glow> by drag-and-dropping them onto the discard pile.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="">
-      <div class="sm:mx-16">
-        <div class="columns-5 w-full gap:4 max-w-3xl mx-auto">
-          <img src="/images/projects/cardium/enemy_slime.gif" alt="Slime">
-          <img src="/images/projects/cardium/enemy_spider.gif" alt="Spider">
-          <img src="/images/projects/cardium/enemy_voidling.gif" alt="Voidling">
-          <img src="/images/projects/cardium/enemy_ranger.gif" alt="Ranger">
-          <img src="/images/projects/cardium/enemy_exterminator.gif" alt="Exterminator">
-        </div>
-      </div>
-
-      <div class="p-6">
-        <div class="text-xl text-textLight font-title">Enemies</div>
-        <div class="text-md text-text font-light my-2 space-y-2">
-          <p> The prototype features <text-glow>4 common</text-glow> enemy types and <text-glow>1 boss</text-glow>, each having their own logic, core stats, and spawn conditions.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="">
-      <img src="/images/projects/cardium/lobby_explanation.png" class="w-full max-w-3xl mx-auto rounded-2xl" alt="Cardium's lobby and main menu">
-      <div class="p-6">
-        <div class="text-xl text-textLight font-title">Interactive main menu</div>
-        <div class="text-md text-text font-light my-2 space-y-2">
-          <p>This area serves both as the main menu and the safe zone. The player can interact with objects to perform actions like managing their <text-glow>inventory</text-glow>, changing the <text-glow>difficulty</text-glow>, viewing <text-glow>statistics</text-glow>, or <text-glow>exiting</text-glow> the game.</p>
-        </div>
-      </div>
-    </div>
-
-    <div id="technical-details" class="max-w-3xl">
-      <div class="text-5xl text-textDim font-title"><span class="text-textLight">#2</span> Technical details</div>
-    </div>
-
-    <div class="">
-      <div class="bg-backgroundLight max-w-3xl w-full rounded-xl text-sm text-left font-mono text-text content-center p-6 mx-auto">
-        <p>Utils.<span class="text-orange-400">GenerateLoot</span>(</p>
-        <p>&nbsp;&nbsp;amount: <span class="text-blue-300">3</span></p>
-        <p>&nbsp;&nbsp;dropRate: <span class="text-red-400">new</span> Dictionary&lt;Type, <span class="text-red-400">int</span>&gt; {</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="text-red-400">typeof</span>(<span class="text-orange-400">SmiteCard</span>), <span class="text-blue-300">40</span> },</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="text-red-400">typeof</span>(<span class="text-orange-400">ScoutCard</span>), <span class="text-blue-300">40</span> },</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="text-red-400">typeof</span>(<span class="text-orange-400">ChainCard</span>), <span class="text-blue-300">20</span> },</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="text-red-400">typeof</span>(<span class="text-orange-400">TeleportCard</span>), <span class="text-blue-300">20</span> },</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="text-red-400">typeof</span>(<span class="text-orange-400">WoodenKeyCard</span>), <span class="text-blue-300">5</span> },</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="text-red-400">typeof</span>(<span class="text-orange-400">GoldenKeyCard</span>), <span class="text-blue-300">5</span> },</p>
-        <p>&nbsp;&nbsp;}</p>
-        <p>);</p>
-      </div>
-      <div class="p-6">
-        <div class="text-3xl text-textLight font-title mb-6">Loot</div>
-        <div class="text-md text-text font-light my-2 space-y-2">
-          <p>Loot is generated using the <code-glow>GenerateLoot()</code-glow> function, which takes a list of card types and their drop rates, and based on the <code-glow>amount</code-glow> parameter, returns a list of <code-glow>Card</code-glow> instances, where the distribution follows the dictionary values.</p>
-          <p>This is an elegant way for generating loot for chests and enemies.</p>
-          <p><text-glow>Criteria:</text-glow> the input dictionary must contain at least one type that can be cast to <code>Card</code>.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="">
-      <img src="/images/projects/cardium/pretty_walls.png" class="w-full max-w-3xl mx-auto rounded-2xl" alt="A section of pretty walls from the game">
-      <div class="p-6">
-        <div class="text-3xl text-textLight font-title mb-6">Pretty walls</div>
-        <div class="text-md text-text font-light my-2 space-y-2">
-          <p>Walls are just solid cells by default. To make them visually more appealing, one can use a sprite sheet that contains textures for all possible wall orientations.</p>
-          <p>In some styles (such as in this game), the texture used for a certain cell depends on the surrounding 8 tiles. Since each tile can be either wall (true) or empty (false), the total amount of possible surroundings is 2<sup>8</sup>, which is 256. However, some wall textures can be re-used for multiple scenarios, as their layout does not depend on certain cells.</p>
-          <p>The figure below illustrates how a certain wall texture can be applied in multiple scenarios. In the top-right corner of the image, surrounding cells are categorized as follows:</p>
-          <ul class="list-disc ml-6">
-            <li><code-glow>true</code-glow>: must be wall</li>
-            <li><code-glow>false</code-glow>: must be empty</li>
-            <li><code-glow>null</code-glow>: can be either</li>
-          </ul>
-        </div>
-      </div>
-      <img src="/images/projects/cardium/walls.png" class="w-full max-w-3xl mx-auto rounded-2xl" alt="The wall sprite sheet and an explanation of neighbor rules">
-      <div class="p-6">
-        <div class="text-md text-text font-light my-2 space-y-2">
-          <p>To address all 256 possible combinations, a <code>Dictionary</code> can be constructed, where <i>keys</i> are 8-bit masks representing the state of the surrounding tiles (empty &#x279D; 0, wall &#x279D; 1), and <i>values</i> are the corresponding wall texture's atlas coordinates.</p>
-          <p>Instead of populating the dictionary by hand, the above-mentioned patterns, consisting of the <code-glow>true</code-glow>, <code-glow>false</code-glow>, and <code-glow>null</code-glow> values, can be used to describe conditions for each texture found in the sprite sheet. Then, an algorithm can generate the dictionary entries that satisfy the conditions.</p>
-        </div>
-      </div>
-      <div class="bg-backgroundLight max-w-3xl w-full rounded-xl text-sm text-left font-mono text-text content-center p-6 mx-auto">
-        <p><span class="text-orange-400">AddBitmaskEntries</span>(
-        <p>&nbsp;&nbsp;atlasCoords: <span class="text-red-400">new</span> Vector2I(<span class="text-blue-300">3</span>, <span class="text-blue-300">1</span>),</p>
-        <p>&nbsp;&nbsp;pattern: <span class="text-red-400">new</span> List&lt;<span class="text-red-400">bool</span>?&gt;() {</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-400">null</span>,&nbsp;&nbsp;<span class="text-red-400">false</span>,&nbsp;<span class="text-red-400">null</span>,</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-400">true</span>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-400">true</span>,</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-400">false</span>,&nbsp;<span class="text-red-400">true</span>,&nbsp;&nbsp;<span class="text-red-400">true</span></p>
-        <p>&nbsp;&nbsp;}</p>
-        <p>);</p>
-      </div>
-      <div class="p-6">
-        <div class="text-md text-text font-light my-2 space-y-2">
-          <p>This is what the <code-glow>AddBitmaskEntries()</code-glow> function does, which takes the atlas coordinates of a texture (<code-glow>atlasCoords</code-glow>) and a <code-glow>pattern</code-glow> of 8 nullable booleans (soon to be converted to a bitmask), where each value represents the state of a surrounding tile in the order shown in the bottom-right corner of the image. The function will then generate all possible surrounding variations that matches the pattern, and add them to the dictionary.</p>
-        </div>
-      </div>
-      <div class="bg-backgroundLight max-w-3xl w-full rounded-xl text-sm text-left font-mono text-text content-center p-6 mx-auto">
-        <p><span class="text-red-400">var</span> bitmask = <span class="text-orange-400">GetWallBitmask</span>(x, y);</p>
-        <p><span class="text-red-400">var</span> atlasCoords = <span class="text-indigo-400">bitmaskToWallAtlasCoords</span>[bitmask];</p>
-        <p>WallLayer.<span class="text-orange-400">SetCell</span>(<span class="text-red-400">new</span> Vector2I(x, y), <span class="text-blue-300">0</span>, atlasCoords);</p>
-      </div>
-      <div class="p-6">
-        <div class="text-md text-text font-light my-2 space-y-2">
-          <p>Finally, the dictionary can be easily used to access the appropriate texture by providing the bitmask that describes a cell's surroundings.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="">
-      <img src="/images/projects/cardium/dungeon_generation.gif" class="w-full max-w-3xl mx-auto rounded-2xl" alt="Animation showing the dungeon generation steps">
-      <div class="p-6">
-        <div class="text-3xl text-textLight font-title mb-6">Dungeon generation</div>
-        <div class="text-md text-text font-light my-2 space-y-2">
-          <p>The process is an extended version of the <text-link href="https://journal.stuffwithstuff.com/2014/12/21/rooms-and-mazes/" class="hover:underline">algorithm</text-link> from Bob Nystrom.</p>
-          <p>First, a bunch of rectangular rooms are placed, which later get connected via mazes and doorways. Dead ends are removed to improve the exploration experience.</p>
-          <p>As the final step, enemies and objects are placed into each room. Their number, level, and type depend on the room size, difficulty level, and other factors.</p>
-        </div>
-      </div>
+  <div class="mx-auto mb-8 text-sm max-w-xs flex flex-col items-center text-textDim font-light fill-textDim">
+    <div class="flex flex-row items-center justify-center gap-1">
+      Available for:
+      <svg class="size-4"><use href="/svg/icons.svg#windows"/></svg>
+      <svg class="size-4"><use href="/svg/icons.svg#apple"/></svg>
     </div>
   </div>
-</div>
 
-<custom-footer></custom-footer>
-<scroll-to-top></scroll-to-top>
 
-<script type="module" src="/src/components/projectDetails.js"></script>
-<script type="module" src="/src/components/iconButton.js"></script>
-<script type="module" src="/src/components/customTitle.js"></script>
-<script type="module" src="/src/components/customFooter.js"></script>
-<script type="module" src="/src/components/scrollToTop.js"></script>
-<script type="module" src="/src/components/textGlow.js"></script>
-<script type="module" src="/src/components/codeGlow.js"></script>
-<script type="module" src="/src/components/textLink.js"></script>
-<script type="module" src="/src/components/backNavbar.js"></script>
+  <div class="mb-32 flex flex-row items-center justify-center gap-4">
+    <icon-button icon="github" text="View on GitHub" url="https://github.com/levente-varga/Cardium"></icon-button>
+    <icon-button icon="document-medium" text="View thesis" url="/files/cardium/thesis.pdf" blank="false"></icon-button>
+  </div>
+
+  <div class="sm:mx-8 mx-4">
+    <div class="flex flex-col gap-32 w-full max-w-xl mx-auto">
+
+      <div id="gameplay" class="max-w-3xl">
+        <div class="text-5xl text-textDim font-title"><span class="text-textLight">#1</span> Gameplay</div>
+      </div>
+
+      <div class="">
+        <img src="/images/projects/cardium.png" class="w-full max-w-3xl mx-auto rounded-2xl" alt="Gameplay overview">
+        <div class="p-6">
+          <div class="text-xl text-textLight font-title">Overview</div>
+          <div class="text-md text-text font-light my-2 space-y-2">
+            <p>The only resource in the game is <text-glow>cards</text-glow>: found inside chests and dropped from defeated enemies.</p>
+            <p>The game is turn based, with each action (moving, playing or discarding a card, etc.) counting as one turn.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="columns-2 w-full gap-8 max-w-3xl mx-auto">
+          <img src="/images/projects/cardium/moving.gif" class="w-full rounded-2xl" alt="Player movement animation">
+          <img src="/images/projects/cardium/nudging.gif" class="w-full rounded-2xl" alt="Player nudging animation">
+        </div>
+
+        <div class="p-6">
+          <div class="text-xl text-textLight font-title">Controls</div>
+          <div class="text-md text-text font-light my-2 space-y-2">
+            <p> The player moves using the <text-glow>arrow keys</text-glow>. Objects can be <text-glow>interacted</text-glow> by nudging them.</p>
+            <p> Holding down a key allows for continuous movement to speed up traversing long corridors.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="columns-2 w-full gap-8 max-w-3xl mx-auto">
+          <img src="/images/projects/cardium/playing.gif" class="w-full rounded-2xl" alt="Card play animation">
+          <img src="/images/projects/cardium/targeting.gif" class="w-full rounded-2xl" alt="Target selection animation">
+        </div>
+
+        <div class="p-6">
+          <div class="text-xl text-textLight font-title">Using cards</div>
+          <div class="text-md text-text font-light my-2 space-y-2">
+            <p> Cards are selected and played using <text-glow>drag-and-drop</text-glow>. Targets are picked using <text-glow>left-click</text-glow> for cards that need them. Targeting can be cancelled with <text-glow>right-click</text-glow>.</p>
+            <p> Cards can be <text-glow>discarded</text-glow> by drag-and-dropping them onto the discard pile.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="sm:mx-16">
+          <div class="columns-5 w-full gap:4 max-w-3xl mx-auto">
+            <img src="/images/projects/cardium/enemy_slime.gif" alt="Slime">
+            <img src="/images/projects/cardium/enemy_spider.gif" alt="Spider">
+            <img src="/images/projects/cardium/enemy_voidling.gif" alt="Voidling">
+            <img src="/images/projects/cardium/enemy_ranger.gif" alt="Ranger">
+            <img src="/images/projects/cardium/enemy_exterminator.gif" alt="Exterminator">
+          </div>
+        </div>
+
+        <div class="p-6">
+          <div class="text-xl text-textLight font-title">Enemies</div>
+          <div class="text-md text-text font-light my-2 space-y-2">
+            <p> The prototype features <text-glow>4 common</text-glow> enemy types and <text-glow>1 boss</text-glow>, each having their own logic, core stats, and spawn conditions.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <img src="/images/projects/cardium/lobby_explanation.png" class="w-full max-w-3xl mx-auto rounded-2xl" alt="Cardium's lobby and main menu">
+        <div class="p-6">
+          <div class="text-xl text-textLight font-title">Interactive main menu</div>
+          <div class="text-md text-text font-light my-2 space-y-2">
+            <p>This area serves both as the main menu and the safe zone. The player can interact with objects to perform actions like managing their <text-glow>inventory</text-glow>, changing the <text-glow>difficulty</text-glow>, viewing <text-glow>statistics</text-glow>, or <text-glow>exiting</text-glow> the game.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="technical-details" class="max-w-3xl">
+        <div class="text-5xl text-textDim font-title"><span class="text-textLight">#2</span> Technical details</div>
+      </div>
+
+      <div class="">
+        <div class="bg-backgroundLight max-w-3xl w-full rounded-xl text-sm text-left font-mono text-text content-center p-6 mx-auto">
+          <p>Utils.<span class="text-orange-400">GenerateLoot</span>(</p>
+          <p>&nbsp;&nbsp;amount: <span class="text-blue-300">3</span></p>
+          <p>&nbsp;&nbsp;dropRate: <span class="text-red-400">new</span> Dictionary&lt;Type, <span class="text-red-400">int</span>&gt; {</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="text-red-400">typeof</span>(<span class="text-orange-400">SmiteCard</span>), <span class="text-blue-300">40</span> },</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="text-red-400">typeof</span>(<span class="text-orange-400">ScoutCard</span>), <span class="text-blue-300">40</span> },</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="text-red-400">typeof</span>(<span class="text-orange-400">ChainCard</span>), <span class="text-blue-300">20</span> },</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="text-red-400">typeof</span>(<span class="text-orange-400">TeleportCard</span>), <span class="text-blue-300">20</span> },</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="text-red-400">typeof</span>(<span class="text-orange-400">WoodenKeyCard</span>), <span class="text-blue-300">5</span> },</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;{ <span class="text-red-400">typeof</span>(<span class="text-orange-400">GoldenKeyCard</span>), <span class="text-blue-300">5</span> },</p>
+          <p>&nbsp;&nbsp;}</p>
+          <p>);</p>
+        </div>
+        <div class="p-6">
+          <div class="text-3xl text-textLight font-title mb-6">Loot</div>
+          <div class="text-md text-text font-light my-2 space-y-2">
+            <p>Loot is generated using the <code-glow>GenerateLoot()</code-glow> function, which takes a list of card types and their drop rates, and based on the <code-glow>amount</code-glow> parameter, returns a list of <code-glow>Card</code-glow> instances, where the distribution follows the dictionary values.</p>
+            <p>This is an elegant way for generating loot for chests and enemies.</p>
+            <p><text-glow>Criteria:</text-glow> the input dictionary must contain at least one type that can be cast to <code>Card</code>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <img src="/images/projects/cardium/pretty_walls.png" class="w-full max-w-3xl mx-auto rounded-2xl" alt="A section of pretty walls from the game">
+        <div class="p-6">
+          <div class="text-3xl text-textLight font-title mb-6">Pretty walls</div>
+          <div class="text-md text-text font-light my-2 space-y-2">
+            <p>Walls are just solid cells by default. To make them visually more appealing, one can use a sprite sheet that contains textures for all possible wall orientations.</p>
+            <p>In some styles (such as in this game), the texture used for a certain cell depends on the surrounding 8 tiles. Since each tile can be either wall (true) or empty (false), the total amount of possible surroundings is 2<sup>8</sup>, which is 256. However, some wall textures can be re-used for multiple scenarios, as their layout does not depend on certain cells.</p>
+            <p>The figure below illustrates how a certain wall texture can be applied in multiple scenarios. In the top-right corner of the image, surrounding cells are categorized as follows:</p>
+            <ul class="list-disc ml-6">
+              <li><code-glow>true</code-glow>: must be wall</li>
+              <li><code-glow>false</code-glow>: must be empty</li>
+              <li><code-glow>null</code-glow>: can be either</li>
+            </ul>
+          </div>
+        </div>
+        <img src="/images/projects/cardium/walls.png" class="w-full max-w-3xl mx-auto rounded-2xl" alt="The wall sprite sheet and an explanation of neighbor rules">
+        <div class="p-6">
+          <div class="text-md text-text font-light my-2 space-y-2">
+            <p>To address all 256 possible combinations, a <code>Dictionary</code> can be constructed, where <i>keys</i> are 8-bit masks representing the state of the surrounding tiles (empty &#x279D; 0, wall &#x279D; 1), and <i>values</i> are the corresponding wall texture's atlas coordinates.</p>
+            <p>Instead of populating the dictionary by hand, the above-mentioned patterns, consisting of the <code-glow>true</code-glow>, <code-glow>false</code-glow>, and <code-glow>null</code-glow> values, can be used to describe conditions for each texture found in the sprite sheet. Then, an algorithm can generate the dictionary entries that satisfy the conditions.</p>
+          </div>
+        </div>
+        <div class="bg-backgroundLight max-w-3xl w-full rounded-xl text-sm text-left font-mono text-text content-center p-6 mx-auto">
+          <p><span class="text-orange-400">AddBitmaskEntries</span>(
+          <p>&nbsp;&nbsp;atlasCoords: <span class="text-red-400">new</span> Vector2I(<span class="text-blue-300">3</span>, <span class="text-blue-300">1</span>),</p>
+          <p>&nbsp;&nbsp;pattern: <span class="text-red-400">new</span> List&lt;<span class="text-red-400">bool</span>?&gt;() {</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-400">null</span>,&nbsp;&nbsp;<span class="text-red-400">false</span>,&nbsp;<span class="text-red-400">null</span>,</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-400">true</span>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-400">true</span>,</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-400">false</span>,&nbsp;<span class="text-red-400">true</span>,&nbsp;&nbsp;<span class="text-red-400">true</span></p>
+          <p>&nbsp;&nbsp;}</p>
+          <p>);</p>
+        </div>
+        <div class="p-6">
+          <div class="text-md text-text font-light my-2 space-y-2">
+            <p>This is what the <code-glow>AddBitmaskEntries()</code-glow> function does, which takes the atlas coordinates of a texture (<code-glow>atlasCoords</code-glow>) and a <code-glow>pattern</code-glow> of 8 nullable booleans (soon to be converted to a bitmask), where each value represents the state of a surrounding tile in the order shown in the bottom-right corner of the image. The function will then generate all possible surrounding variations that matches the pattern, and add them to the dictionary.</p>
+          </div>
+        </div>
+        <div class="bg-backgroundLight max-w-3xl w-full rounded-xl text-sm text-left font-mono text-text content-center p-6 mx-auto">
+          <p><span class="text-red-400">var</span> bitmask = <span class="text-orange-400">GetWallBitmask</span>(x, y);</p>
+          <p><span class="text-red-400">var</span> atlasCoords = <span class="text-indigo-400">bitmaskToWallAtlasCoords</span>[bitmask];</p>
+          <p>WallLayer.<span class="text-orange-400">SetCell</span>(<span class="text-red-400">new</span> Vector2I(x, y), <span class="text-blue-300">0</span>, atlasCoords);</p>
+        </div>
+        <div class="p-6">
+          <div class="text-md text-text font-light my-2 space-y-2">
+            <p>Finally, the dictionary can be easily used to access the appropriate texture by providing the bitmask that describes a cell's surroundings.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <img src="/images/projects/cardium/dungeon_generation.gif" class="w-full max-w-3xl mx-auto rounded-2xl" alt="Animation showing the dungeon generation steps">
+        <div class="p-6">
+          <div class="text-3xl text-textLight font-title mb-6">Dungeon generation</div>
+          <div class="text-md text-text font-light my-2 space-y-2">
+            <p>The process is an extended version of the <text-link href="https://journal.stuffwithstuff.com/2014/12/21/rooms-and-mazes/" class="hover:underline">algorithm</text-link> from Bob Nystrom.</p>
+            <p>First, a bunch of rectangular rooms are placed, which later get connected via mazes and doorways. Dead ends are removed to improve the exploration experience.</p>
+            <p>As the final step, enemies and objects are placed into each room. Their number, level, and type depend on the room size, difficulty level, and other factors.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <custom-footer></custom-footer>
+  <scroll-to-top></scroll-to-top>
+
+  <script type="module" src="/src/components/projectDetails.js"></script>
+  <script type="module" src="/src/components/iconButton.js"></script>
+  <script type="module" src="/src/components/customTitle.js"></script>
+  <script type="module" src="/src/components/customFooter.js"></script>
+  <script type="module" src="/src/components/scrollToTop.js"></script>
+  <script type="module" src="/src/components/textGlow.js"></script>
+  <script type="module" src="/src/components/codeGlow.js"></script>
+  <script type="module" src="/src/components/textLink.js"></script>
+  <script type="module" src="/src/components/backNavbar.js"></script>
 </body>
 </html>
