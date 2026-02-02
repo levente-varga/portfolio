@@ -35,7 +35,7 @@ class ProjectCard extends HTMLElement {
         <div class="px-6 py-6 transform-style-3d">
           <div class="flex justify-between items-center">
             <div class="text-xl text-textLight font-title">${name}</div>
-            <div class="text-sm text-textDim">${year}</div>
+            <div class="text-sm text-textFaded">${year}</div>
           </div>
           <div class="text-sm text-text mt-1">${description}</div>
         </div>
