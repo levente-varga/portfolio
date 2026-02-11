@@ -7,7 +7,7 @@ export const experiences = [
     time: "July 2025 - Present",
     location: "Budapest, Hungary",
     footer: "",
-    description: "Full-stack web development in the High School Exchange Year team using ASP.NET Core (C#, Razor, MVC), Entity Framework, with JavaScript (Knockout, Vue, jQuery, AJAX), Bootstrap, MSSQL, MongoDB, and some ElasticSearch. Working with Azure, Azure DevOps for CI/CD, and the Atlassian suite. Exposition to Salesforce.",
+    description: "Full-stack web development in the High School Exchange Year team using ASP.NET Core (C#, Razor, MVC), Entity Framework, with JavaScript (Knockout, Vue, jQuery, AJAX), Bootstrap, MSSQL, MongoDB, and some ElasticSearch. Working with Azure, Azure DevOps for CI/CD, and the Atlassian suite. Exposition to Salesforce and Storyblok.",
   },
   {
     name: "Flutter Developer",

@@ -50,6 +50,7 @@
   --color-godot: #4d90c1;
   --color-gdscript: #842a8c;
   --color-unity: #888888;
+  --color-ev3g: #02b584;
 
   --animate-rotate-y-right: rotateYRight 1.5s ease-in-out;
   @keyframes rotateYRight {
@@ -81,6 +82,7 @@
   .bg-godot { background-color: var(--color-godot); }
   .bg-gdscript { background-color: var(--color-gdscript); }
   .bg-unity { background-color: var(--color-unity); }
+  .bg-ev3g { background-color: var(--color-ev3g); }
 
   .animation-delay-200 {
     animation-delay: 200ms;

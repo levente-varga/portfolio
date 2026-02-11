@@ -115,7 +115,7 @@ export const projects = [
     name: "Robotics",
     description: "Participation in LEGO robotics competitions.",
     image: "/images/projects/robotics/design-award.jpg",
-    tags: '{}',
+    tags: '{"EV3-G": "ev3g"}',
     year: "2013-2018",
     url: "/projects/robotics.html"
   }
