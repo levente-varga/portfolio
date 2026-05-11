@@ -1,6 +1,6 @@
 export const experiences = [
   {
-    name: "Junior Software Engineer",
+    name: "Software Engineer",
     company: "Education First",
     companyUrl: "https://www.ef.com/",
     logo: "/images/experience/ef.png",
