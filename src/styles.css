@@ -67,6 +67,40 @@
       transform-origin: right;
     }
   }
+
+  --animate-reveal: reveal 2s cubic-bezier(0, 0, 0.1, 1);
+  @keyframes reveal {
+    0% {
+      opacity: 0;
+      transform: translateY(20px) scale(0.9) perspective(1000px) rotateX(-30deg);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1) perspective(1000px) rotateX(0deg);
+    }
+  }
+
+  --animate-fade-in: fade-in 3s cubic-bezier(0, 0, 0.5, 1);
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  --animate-fade-up: fade-up 1.5s cubic-bezier(0, 0, 0.1, 1);
+  @keyframes fade-up {
+    0% {
+      opacity: 0;
+      transform: translateY(160px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
 
 @layer utilities {
@@ -84,13 +118,48 @@
   .bg-unity { background-color: var(--color-unity); }
   .bg-ev3g { background-color: var(--color-ev3g); }
 
+  .animation-delay-100 {
+    animation-delay: 100ms;
+    animation-fill-mode: backwards;
+  }
+
   .animation-delay-200 {
     animation-delay: 200ms;
     animation-fill-mode: backwards;
   }
 
+  .animation-delay-300 {
+    animation-delay: 300ms;
+    animation-fill-mode: backwards;
+  }
+
   .animation-delay-400 {
     animation-delay: 400ms;
+    animation-fill-mode: backwards;
+  }
+
+  .animation-delay-500 {
+    animation-delay: 500ms;
+    animation-fill-mode: backwards;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 600ms;
+    animation-fill-mode: backwards;
+  }
+
+  .animation-delay-700 {
+    animation-delay: 700ms;
+    animation-fill-mode: backwards;
+  }
+
+  .animation-delay-800 {
+    animation-delay: 800ms;
+    animation-fill-mode: backwards;
+  }
+
+  .animation-delay-900 {
+    animation-delay: 900ms;
     animation-fill-mode: backwards;
   }
 

@@ -24,17 +24,17 @@
   <div id="home" class="container h-16"></div>
 
   <div class="flex flex-col justify-center space-y-4 sm:pt-16 pt-12 w-fit mb-32 mx-auto">
-    <div class="sm:size-48 size-36 mx-auto mb-16 sm:rounded-4xl rounded-3xl bg-cover bg-center bg-no-repeat" style="background-image: url('/images/profile.png');"></div>
+    <div class="sm:size-48 size-36 mx-auto mb-16 sm:rounded-4xl rounded-3xl bg-cover bg-center bg-no-repeat animate-reveal" style="background-image: url('/images/profile.png');"></div>
 
     <div class="text-textDim fill-textDim text-center content-center w-fit cursor-default">
-      <div class="sm:text-7xl text-6xl font-title tracking-wide">LEVENTE</div>
-      <div class="sm:text-7xl text-6xl font-title tracking-wide">VARGA</div>
-      <div class="sm:text-xl text-lg font-light">Developer & Designer</div>
-      <ul class="flex space-x-2.5 items-center mt-6 mx-auto w-fit font-light hover:fill-text duration-250">
+      <div class="sm:text-7xl text-6xl font-title tracking-wide animate-fade-in animation-delay-100">LEVENTE</div>
+      <div class="sm:text-7xl text-6xl font-title tracking-wide animate-fade-in animation-delay-200">VARGA</div>
+      <div class="sm:text-xl text-lg font-light animate-fade-in animation-delay-300">Developer & Designer</div>
+      <ul class="flex space-x-2.5 items-center mt-6 mx-auto w-fit font-light hover:fill-text duration-250 animate-fade-in animation-delay-400">
         <li><svg class="size-6 min-w-6"><use href="/svg/icons.svg#location"/></svg></li>
         <li>Budapest, Hungary</li>
       </ul>
-      <ul class="flex space-x-4 items-center mt-8 mx-auto w-fit">
+      <ul class="flex space-x-4 items-center mt-8 mx-auto w-fit animate-fade-in animation-delay-500">
         <li><a href="https://github.com/levente-varga" target="_blank" rel="noopener noreferrer">
           <svg class="size-6 hover:fill-text duration-250"><use href="/svg/icons.svg#github"/></svg>
         </a></li>
@@ -54,8 +54,8 @@
     </div>
   </div>
 
-  <div id="projects" class="text-4xl text-center text-textDim font-title mb-8">Projects</div>
-  <div class="mx-8">
+  <div id="projects" class="text-4xl text-center text-textDim font-title mb-8 animate-fade-up animation-delay-600">Projects</div>
+  <div class="mx-8 animate-fade-up animation-delay-600">
     <div class="grid grid-cols-1 md:grid-cols-2 w-full md:max-w-5xl max-w-lg gap-8 mx-auto" id="projects-container"></div>
   </div>
 
@@ -87,7 +87,7 @@
         </div>
       </div>
       <div class="md:flex hidden flex-1 flex-col items-center justify-center">
-        <svg class="size-48 fill-textDark"><use href="/svg/icons.svg#logo-refined"/></svg>
+        <svg class="size-48 fill-textDark hover:fill-textDim duration-300"><use href="/svg/icons.svg#logo-refined"/></svg>
       </div>
     </div>
   </div>

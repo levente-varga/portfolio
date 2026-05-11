@@ -24,7 +24,7 @@ class ProjectCard extends HTMLElement {
 
     this.projectCardId = `project-card-${name.toLowerCase()}`;
 
-    this.innerHTML = `<div class="reveal-on-scroll">
+    this.innerHTML = `<div class="">
       <a href="${url}">
       <div class="perspective-[1000px] hover:scale-[1.02] duration-200">
       <div id="${(this.projectCardId)}" class="w-full rounded-2xl transition-transform duration-[400ms] ease-out ring-1 ring-white/5 bg-foreground shadow-xl overflow-hidden transform-style-3d [backface-visibility:hidden] will-change-transform">
