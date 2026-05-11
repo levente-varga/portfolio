@@ -12,7 +12,7 @@ class CustomNavbar extends HTMLElement {
   render() {
     this.innerHTML = `
       <header id="navbar" style="transition: transform 0.3s ease-in-out;" class="fixed inset-0 z-20 h-fit">
-        <div class="flex bg-background px-4 justify-center sm:h-16 h-20">
+        <div class="flex bg-background px-4 justify-center sm:h-16 h-20 animate-fade-down animation-delay-300">
           <nav class="sm:flex hidden">
             <ul class="flex space-x-5 items-center text-textLight">
               <li><a href="#home" class="group m-4">
