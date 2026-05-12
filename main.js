@@ -115,3 +115,28 @@ createTimeline(experiences, experienceContainer);
 createTimeline(educations, educationContainer);
 createTimeline(awards, awardsContainer);
 //setupCarousel();
+
+// Wait for fonts and profile image to load before starting animations
+const profileImageUrl = '/images/profile.png';
+const profileImage = new Image();
+profileImage.src = profileImageUrl;
+
+const fontsReady = document.fonts.ready;
+const imageReady = new Promise((resolve) => {
+  if (profileImage.complete) {
+    resolve();
+  } else {
+    profileImage.onload = resolve;
+    profileImage.onerror = resolve; // Continue even if image fails to load
+  }
+});
+
+// Wait for a small timeout as a fallback and to ensure smooth transition
+const timeout = new Promise((resolve) => setTimeout(resolve, 1000));
+
+Promise.race([
+  Promise.all([fontsReady, imageReady]),
+  timeout
+]).then(() => {
+  document.body.classList.remove('wait-loading');
+});

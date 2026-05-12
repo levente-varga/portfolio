@@ -178,6 +178,10 @@
   .transform-style-3d {
     transform-style: preserve-3d;
   }
+
+  .wait-loading * {
+    animation-play-state: paused !important;
+  }
 }
 
 body {
