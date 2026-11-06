@@ -42,79 +42,9 @@ function createTimeline(entries, container) {
   });
 }
 
-function setupCarousel() {
-  const iconList = [
-    'vscode', 'visualstudio', 'azure', 'unity', 'html', 'css', 'javascript', 'dart', 'kotlin', 'xcode', 'git', 'cpp', 'csharp', 'aspnet', 'tailwind', 'androidstudio', 'webstorm', 'rider', 'blender', 'davinci', 'figma', 'godot', 'flutter', 'bootstrap', 'mongo', 'mssql'
-  ];
-  iconList.sort(() => Math.random() - 0.5);
-
-  const carousel = document.getElementById('icon-carousel');
-  const iconWidth = 32;
-  const gap = 16;
-  const maxSpeed = 40;
-  let speed = 40;
-  let hovered = false;
-
-  carousel.onmouseover = () => {
-    hovered = true;
-    console.log('hovered');
-  }
-  carousel.onmouseout = () => {
-    hovered = false;
-    console.log('unhovered');
-  }
-  const lerp = (x, y, a) => x * (1 - a) + y * a;
-
-  function createIcon(id) {
-    const img = document.createElement('div');
-    img.setAttribute('class', 'size-8 bg-cover bg-center bg-no-repeat');
-    img.style.backgroundImage = `url('/images/tools/${id}.png')`;
-    const div = document.createElement('div');
-    div.setAttribute('class', 'h-8 w-12 pr-4');
-    div.appendChild(img);
-    return div;
-  }
-
-  function fillCarousel() {
-    const containerWidth = carousel.parentElement.offsetWidth;
-    for (let i = 0; i < iconList.length; i++) {
-      const icon = createIcon(iconList[i]);
-      carousel.appendChild(icon);
-    }
-  }
-
-  fillCarousel();
-
-  let offset = 0;
-  let previousTime = performance.now();
-  function animateCarousel() {
-    let deltaTime = (performance.now() - previousTime) / 1000.0;
-    previousTime = performance.now();
-
-    if (hovered) {
-      speed = lerp(speed, 0, deltaTime * 4);
-    } else {
-      speed = lerp(speed, maxSpeed, deltaTime * 0.5);
-    }
-    offset -= speed * deltaTime;
-    carousel.style.transform = `translateX(${offset}px)`;
-
-    const firstIcon = carousel.firstElementChild;
-    if (firstIcon && firstIcon.getBoundingClientRect().right < carousel.parentElement.getBoundingClientRect().left) {
-      carousel.appendChild(firstIcon);
-      offset += iconWidth + gap;
-      carousel.style.transform = `translateX(${offset}px)`;
-    }
-    requestAnimationFrame(animateCarousel);
-  }
-
-  animateCarousel();
-}
-
 createTimeline(experiences, experienceContainer);
 createTimeline(educations, educationContainer);
 createTimeline(awards, awardsContainer);
-//setupCarousel();
 
 // Wait for fonts and profile image to load before starting animations
 const profileImageUrl = '/images/profile.png';

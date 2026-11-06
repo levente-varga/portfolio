@@ -15,7 +15,7 @@ class CustomNavbar extends HTMLElement {
         <div class="flex bg-background px-4 justify-center sm:h-16 h-20 animate-fade-down animation-delay-300">
           <nav class="sm:flex hidden">
             <ul class="flex space-x-5 items-center text-textLight">
-              <li><a href="#home" class="group m-4">
+              <li><a href="#home" class="group m-4" aria-label="Home">
                 <svg class="size-6 m-4 fill-textLight group-hover:fill-text duration-150"><use href="/svg/icons.svg#logo"/></svg>
               </a></li>
               <li><a href="#projects" class="hover:text-text duration-150">Projects</a></li>
@@ -30,7 +30,7 @@ class CustomNavbar extends HTMLElement {
           <!-- Mobile Menu Button -->
           <div class="flex sm:hidden w-full justify-between items-center">
             <div class="flex-1 items-center"></div>
-            <button id="btn-menu" class="group p-4 cursor-pointer">
+            <button id="btn-menu" class="group p-4 cursor-pointer" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
               <svg class="size-6 fill-textLight group-hover:fill-text duration-150"><use href="/svg/icons.svg#logo"/></svg>
             </button>
           </div>
@@ -47,7 +47,7 @@ class CustomNavbar extends HTMLElement {
             <a id="btn-about" href="#about" class="block px-8 py-6 text-white hover:bg-textDark duration-150">About</a>
             <a id="btn-contact" href="#contact" class="block px-8 py-6 text-white hover:bg-textDark duration-150">Contact</a>
           </div>
-          <button id="btn-close" class="w-full h-full bg-black/50"></button>
+          <button id="btn-close" class="w-full h-full bg-black/50" aria-label="Close menu"></button>
         </div>
       </header>
     `;
@@ -103,41 +103,17 @@ class CustomNavbar extends HTMLElement {
   setupDropdownMenu() {
     const btnMenu = this.querySelector('#btn-menu');
     const mobileMenu = this.querySelector('#mobile-menu');
-    const btnHome = this.querySelector('#btn-home');
-    const btnProjects = this.querySelector('#btn-projects');
-    const btnExperience = this.querySelector('#btn-experience');
-    const btnEducation = this.querySelector('#btn-education');
-    const btnAwards = this.querySelector('#btn-awards');
-    const btnAbout = this.querySelector('#btn-about');
-    const btnContact = this.querySelector('#btn-contact');
-    const btnClose = this.querySelector('#btn-close');
+
+    const setOpen = (open) => {
+      mobileMenu.classList.toggle('hidden', !open);
+      btnMenu.setAttribute('aria-expanded', String(open));
+    };
 
     btnMenu.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
+      setOpen(mobileMenu.classList.contains('hidden'));
     });
-    btnHome.addEventListener('click', () => {
-      mobileMenu.classList.add('hidden');
-    });
-    btnProjects.addEventListener('click', () => {
-      mobileMenu.classList.add('hidden');
-    });
-    btnExperience.addEventListener('click', () => {
-      mobileMenu.classList.add('hidden');
-    });
-    btnEducation.addEventListener('click', () => {
-      mobileMenu.classList.add('hidden');
-    });
-    btnAwards.addEventListener('click', () => {
-      mobileMenu.classList.add('hidden');
-    });
-    btnAbout.addEventListener('click', () => {
-      mobileMenu.classList.add('hidden');
-    });
-    btnContact.addEventListener('click', () => {
-      mobileMenu.classList.add('hidden');
-    });
-    btnClose.addEventListener('click', () => {
-      mobileMenu.classList.add('hidden');
+    this.querySelectorAll('#mobile-menu a, #btn-close').forEach(element => {
+      element.addEventListener('click', () => setOpen(false));
     });
   }
 }

@@ -1,3 +1,5 @@
+const CustomLabels = { github: "GitHub", linkedin: "LinkedIn", itch: "itch.io", gmail: "Email", youtube: "YouTube" };
+
 class CustomFooter extends HTMLElement {
   static get observedAttributes() {
     return [];
@@ -29,7 +31,7 @@ class CustomFooter extends HTMLElement {
 
   item(url, icon) {
     return url ? `
-      <li><a href="${url}" target="_blank" rel="noopener noreferrer">
+      <li><a href="${url}" target="_blank" rel="noopener noreferrer" aria-label="${CustomLabels[icon] ?? icon}">
         <svg class="size-6 fill-textDim hover:fill-text duration-250"><use href="/svg/icons.svg#${icon}"></use></svg>
       </a></li>
     ` : ``;

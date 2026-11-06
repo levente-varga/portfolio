@@ -7,11 +7,10 @@ class ProjectCard extends HTMLElement {
 
   connectedCallback() {
     this.render();
-    this.addHover();
   }
 
   attributeChangedCallback() {
-    this.render();
+    if (this.isConnected) this.render();
   }
 
   render() {
@@ -22,10 +21,13 @@ class ProjectCard extends HTMLElement {
     const year = this.getAttribute("year") || "";
     const url = this.getAttribute("url") || "";
 
-    this.projectCardId = `project-card-${name.toLowerCase()}`;
+    this.projectCardId = `project-card-${name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
+
+    const wrapperStart = url ? `<a href="${url}">` : `<div>`;
+    const wrapperEnd = url ? `</a>` : `</div>`;
 
     this.innerHTML = `<div class="">
-      <a href="${url}">
+      ${wrapperStart}
       <div class="perspective-[1000px] hover:scale-[1.02] duration-200">
       <div id="${(this.projectCardId)}" class="w-full rounded-2xl transition-transform duration-[400ms] ease-out ring-1 ring-white/5 bg-foreground shadow-xl overflow-hidden transform-style-3d [backface-visibility:hidden] will-change-transform">
         <div class="rounded-t-2xl aspect-[calc(5/3)] overflow-hidden">
@@ -51,13 +53,17 @@ class ProjectCard extends HTMLElement {
         `}
       </div>
       </div>
-      </a>
+      ${wrapperEnd}
       </div>
     `;
+
+    this.addHover();
   }
 
   addHover() {
-    const projectCard = document.getElementById(this.projectCardId);
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const projectCard = this.querySelector(`#${this.projectCardId}`);
     const cardImage = projectCard.querySelector('.project-card-image');
 
     projectCard.addEventListener('mouseenter', () => {

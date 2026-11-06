@@ -1,5 +1,13 @@
 export const projects = [
   {
+    name: "Graph Playgrounds",
+    description: "Graph generator and visualiser.",
+    image: "/images/projects/graph-playgrounds.jpg",
+    tags: '{"Dart": "dart", "Flutter": "flutter"}',
+    year: "2026",
+    url: ""
+  },
+  {
     name: "Cardium",
     description: "Extraction deckbuilder.",
     image: "/images/projects/cardium.png",
@@ -107,7 +115,7 @@ export const projects = [
     name: "Minesweeper",
     description: "The classic game in full screen.",
     image: "/images/projects/minesweeper.png",
-    tags: '{"C": "cpp"}',
+    tags: '{"C": "c"}',
     year: "2018-2020",
     url: "/projects/minesweeper.html"
   },

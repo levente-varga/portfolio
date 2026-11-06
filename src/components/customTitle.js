@@ -1,3 +1,5 @@
+const CustomLabels = { github: "GitHub", linkedin: "LinkedIn", itch: "itch.io", gmail: "Email", youtube: "YouTube" };
+
 class CustomTitle extends HTMLElement {
   static get observedAttributes() {
     return ["text", "prefix", "suffix", "topPadding", "bottomPadding", "responsive", "itch", "github", "youtube"];
@@ -22,8 +24,6 @@ class CustomTitle extends HTMLElement {
     const github = this.getAttribute("github");
     const youtube = this.getAttribute("youtube");
 
-    console.log(`Padding: ${topPadding}, ${bottomPadding}`);
-
     this.innerHTML = `
       <div class="flex flex-col justify-center space-y-4 px-8 w-fit mx-auto" style="padding-top: ${topPadding}rem; padding-bottom: ${bottomPadding}rem;">
         <div class="text-textDim text-center content-center w-fit">
@@ -44,7 +44,7 @@ class CustomTitle extends HTMLElement {
 
   item(url, icon) {
     return url ? `
-      <li><a href="${url}" target="_blank" rel="noopener noreferrer">
+      <li><a href="${url}" target="_blank" rel="noopener noreferrer" aria-label="${CustomLabels[icon] ?? icon}">
         <svg class="size-6 fill-textDim hover:fill-text duration-250"><use href="/svg/icons.svg#${icon}"></use></svg>
       </a></li>
     ` : ``;

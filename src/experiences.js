@@ -7,7 +7,7 @@ export const experiences = [
     time: "July 2025 - Present",
     location: "Budapest, Hungary",
     footer: "",
-    description: "Full-stack web development in the High School Exchange Year team using ASP.NET Core (C#, Razor, MVC), Entity Framework, with JavaScript (Knockout, Vue, jQuery, AJAX), Bootstrap, MSSQL, MongoDB, and some ElasticSearch. Working with Azure, Azure DevOps for CI/CD, and the Atlassian suite. Exposition to Salesforce and Storyblok.",
+    description: "Full-stack web development in the High School Exchange Year team using ASP.NET Core (C#, Razor, MVC), Entity Framework, with JavaScript (Knockout, Vue, jQuery, AJAX), Bootstrap, MSSQL, MongoDB, and ElasticSearch. Working with Azure (AI Foundry, App Service, Function Apps, Insights), Azure DevOps for CI/CD, Bitbucket for Git, and the Atlassian suite. Exposure to Salesforce, Vercel, Netlify and Storyblok.",
   },
   {
     name: "Flutter Developer",
@@ -17,7 +17,7 @@ export const experiences = [
     time: "May 2024 - Present (contract)",
     location: "Budapest, Hungary (remote)",
     footer: "",
-    description: "Cross-platform mobile and desktop app development in Flutter (Dart, BLoC) using GitHub. Communication with the server through RESTful APIs and with taximeter units via Bluetooth. Full responsibility for frontend tasks. Designed both apps in Figma.",
+    description: "Cross-platform full-stack mobile and desktop app development in Dart with BLoC using Flutter and ServerPod. Hosting on AWS (EC2, S3, SES) with the help of Coolify and GitHub. Self-designed both apps and their logo in Figma, used Rive for animations.",
   },
   {
     name: "R&D Intern",

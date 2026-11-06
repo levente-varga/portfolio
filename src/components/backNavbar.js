@@ -14,7 +14,7 @@ class BackNavbar extends HTMLElement {
       <header class="fixed top-0 left-0 w-full z-20 transition-transform duration-300">
         <div class="flex justify-center items-center w-full">
           <div id="navbar" style="transition: transform 0.3s ease-in-out;" class="flex lg:max-w-5xl w-full mx-auto bg-background p-4 justify-left items-center sm:h-16 h-20">
-            <button id="button" class="group px-4 cursor-pointer">
+            <button id="button" class="group px-4 cursor-pointer" aria-label="Back">
               <svg class="size-8 fill-textLight group-hover:fill-text duration-150"><use href="/svg/icons.svg#back"/></svg>
             </button>
           </div>
