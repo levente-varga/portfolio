@@ -11,7 +11,7 @@ export const educations = [
   },
   {
     name: "Computer Science and Engineering BSc",
-    company: "Budapest University of Technology and Engineering",
+    company: "Budapest University of Technology and Economics",
     companyUrl: "https://www.bme.hu/en",
     logo: "/images/education/budapest.jpg",
     time: "Sep 2018 - Jan 2022",

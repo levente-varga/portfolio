@@ -1,19 +1,11 @@
 export const projects = [
   {
-    name: "Graph Playgrounds",
-    description: "Graph generator and visualiser.",
-    image: "/images/projects/graph-playgrounds.jpg",
+    name: "Ecometer",
+    description: "Mobile app for taxi drivers.",
+    image: "/images/projects/ecometer.png",
     tags: '{"Dart": "dart", "Flutter": "flutter"}',
-    year: "2026",
-    url: ""
-  },
-  {
-    name: "Cardium",
-    description: "Extraction deckbuilder.",
-    image: "/images/projects/cardium.png",
-    tags: '{"C#": "csharp", "Godot": "godot"}',
-    year: "2025",
-    url: "/projects/cardium.html"
+    year: "2024-2025",
+    url: "/projects/ecometer.html"
   },
   {
     name: "Ecometer Desktop",
@@ -24,52 +16,36 @@ export const projects = [
     url: "/projects/ecometer-desktop.html"
   },
   {
-    name: "Ecometer",
-    description: "Mobile app for taxi drivers.",
-    image: "/images/projects/ecometer.png",
+    name: "Cardium",
+    description: "Extraction deckbuilder. MSc thesis.",
+    image: "/images/projects/cardium.png",
+    tags: '{"C#": "csharp", "Godot": "godot"}',
+    year: "2025",
+    url: "/projects/cardium.html"
+  },
+  {
+    name: "Refraction Shader",
+    description: "BSc thesis on Unity's High Definition Render Pipeline (HDRP)",
+    image: "/images/projects/refraction.png",
+    tags: '{"HLSL": "hlsl", "Unity": "unity"}',
+    year: "2021",
+    url: "/projects/refraction.html"
+  },
+  {
+    name: "Graphs",
+    description: "Educational graph generator and visualiser.",
+    image: "/images/projects/graphs.png",
+    tags: '{"C#": "csharp"}',
+    year: "2022-2024",
+    url: "/projects/graphs.html"
+  },
+  {
+    name: "Graph Playgrounds",
+    description: "Graph generator and visualiser.",
+    image: "/images/projects/graph-playgrounds.jpg",
     tags: '{"Dart": "dart", "Flutter": "flutter"}',
-    year: "2024-2025",
-    url: "/projects/ecometer.html"
-  },
-  {
-    name: "Tower",
-    description: "Game engine using DirectX.",
-    image: "/images/projects/tower.png",
-    tags: '{"C++": "cpp", "HLSL": "hlsl"}',
-    year: "2025",
-    url: "/projects/tower.html"
-  },
-  {
-    name: "Portfolio",
-    description: "This portfolio website.",
-    image: "/images/projects/portfolio.png",
-    tags: '{"JavaScript": "javascript", "Tailwind CSS": "tailwind"}',
-    year: "2025",
-    url: "/projects/portfolio.html"
-  },
-  {
-    name: "Dream Pools",
-    description: "A surreal narrative adventure.",
-    image: "/images/projects/dreampools.png",
-    tags: '{"GDScript": "gdscript", "Godot": "godot"}',
-    year: "2023",
-    url: "/projects/dream-pools.html"
-  },
-  {
-    name: "Weave",
-    description: "Co-op video game mixing Tron and Snake.",
-    image: "/images/projects/weave.png",
-    tags: '{"C#": "csharp", "Godot": "godot"}',
-    year: "2023",
-    url: "/projects/weave.html"
-  },
-  {
-    name: "Melodica",
-    description: "Minimalist rhythm game prototype.",
-    image: "/images/projects/melodica.png",
-    tags: '{"C#": "csharp", "Godot": "godot"}',
-    year: "2023",
-    url: "/projects/melodica.html"
+    year: "2026",
+    url: ""
   },
   {
     name: "JSON Parser",
@@ -80,20 +56,44 @@ export const projects = [
     url: "/projects/json-parser.html"
   },
   {
-    name: "Graphs",
-    description: "Educational graph generator and visualiser.",
-    image: "/images/projects/graphs.png",
-    tags: '{"C#": "csharp"}',
-    year: "2021-2023",
-    url: "/projects/graphs.html"
+    name: "Weave",
+    description: "Co-op video game mixing Tron and Snake.",
+    image: "/images/projects/weave.png",
+    tags: '{"C#": "csharp", "Godot": "godot"}',
+    year: "2023",
+    url: "/projects/weave.html"
   },
   {
-    name: "Refraction Shader",
-    description: "BSc thesis on Unity's High Definition Render Pipeline (HDRP)",
-    image: "/images/projects/refraction.png",
-    tags: '{"HLSL": "hlsl", "Unity": "unity"}',
-    year: "2021",
-    url: "/projects/refraction.html"
+    name: "Portfolio",
+    description: "This portfolio website.",
+    image: "/images/projects/portfolio.png",
+    tags: '{"JavaScript": "javascript", "Tailwind CSS": "tailwind"}',
+    year: "2025",
+    url: "/projects/portfolio.html"
+  },
+  {
+    name: "Tower",
+    description: "Game engine using DirectX.",
+    image: "/images/projects/tower.png",
+    tags: '{"C++": "cpp", "HLSL": "hlsl"}',
+    year: "2025",
+    url: "/projects/tower.html"
+  },
+  {
+    name: "Melodica",
+    description: "Minimalist rhythm game prototype.",
+    image: "/images/projects/melodica.png",
+    tags: '{"C#": "csharp", "Godot": "godot"}',
+    year: "2023",
+    url: "/projects/melodica.html"
+  },
+  {
+    name: "Dream Pools",
+    description: "A surreal narrative adventure.",
+    image: "/images/projects/dreampools.png",
+    tags: '{"GDScript": "gdscript", "Godot": "godot"}',
+    year: "2023",
+    url: "/projects/dream-pools.html"
   },
   {
     name: "Rhythm Ninja",

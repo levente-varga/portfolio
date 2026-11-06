@@ -27,7 +27,7 @@ export const experiences = [
     time: "Jun 2023 - Dec 2023",
     location: "Gothenburg, Sweden",
     footer: "",
-    description: "Unit-test generator plugin development for Clang in modern C++ using GitLab, achieving up to 80% code coverage. Scripting in Bash. Minimal exposition to Jenkins and CMake.",
+    description: "Unit-test generator plugin development for Clang in modern C++ using GitLab, achieving up to 80% code coverage. Scripting in Bash. Minimal exposure to Jenkins and CMake.",
   },
   {
     name: "Mobile Software Developer",
