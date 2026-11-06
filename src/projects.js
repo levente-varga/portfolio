@@ -40,14 +40,6 @@ export const projects = [
     url: "/projects/graphs.html"
   },
   {
-    name: "Graph Playgrounds",
-    description: "Graph generator and visualiser.",
-    image: "/images/projects/graph-playgrounds.jpg",
-    tags: '{"Dart": "dart", "Flutter": "flutter"}',
-    year: "2026",
-    url: ""
-  },
-  {
     name: "JSON Parser",
     description: "Custom JSON parser.",
     image: "/images/projects/json.png",
