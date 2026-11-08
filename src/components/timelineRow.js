@@ -30,7 +30,7 @@ class TimelineRow extends HTMLElement {
           <div class="text-textLight text-2xl font-title">${name}</div>
           <a href="${companyUrl}" target="_blank" rel="noopener noreferrer">
             <div class="flex flex-row text-text hover:underline">
-              <div class="text-xl ${left ? "md:order-0 order-1" : "md:order-0 order-1"}">${company}</div>
+              <div class="text-xl ${left ? "md:order-0 order-1" : "order-1"}">${company}</div>
               ${logo ? `<img class="size-6 rounded ${left ? "md:order-1 order-0 md:ml-2 md:mr-0 mr-2" : "mr-2"}" src="${logo}" alt="Logo"/>` : ''}
             </div>
           </a>
