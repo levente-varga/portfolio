@@ -18,7 +18,7 @@ class CustomFooter extends HTMLElement {
           ${this.item("https://github.com/levente-varga", "github")}
           ${this.item("https://www.linkedin.com/in/levente-varga/", "linkedin")}
           ${this.item("https://leventevarga.itch.io", "itch")}
-          ${this.item("mailto:v.levente1999@gmail.com", "gmail")}
+          ${this.item("mailto:hello@leventevarga.com", "gmail")}
           ${this.item("https://www.youtube.com/@levente-varga", "youtube")}
         </ul>
       </div>
